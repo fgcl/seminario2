@@ -5,9 +5,12 @@
   text-align: center;
 }
 
+body {
+  background-color: black;
+}
+
 .logo {
   height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -39,4 +42,18 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/** Meus Estilos **/
+.c_titulo{
+  color:yellow;
+  text-align: center;
+}
+
+.c_corbranca{
+  color:white;
+}
+
+#id_nome{
+  color:green;
 }
