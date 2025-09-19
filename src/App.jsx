@@ -6,13 +6,20 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const [nome, setNome] = useState('Felipe')
-  let clique = 1
+  // Usar o useState para "lembrar" a contagem de cliques
+  const [clique, setClique] = useState(0);
 
   const handleNomeClick = () => {
-    // Verifica o valor ATUAL do nome e define o NOVO valor
-    if (clique % 2 === 0) {
-      clique++;
+    // 1. Incrementa o contador de cliques para a próxima renderização
+    const novoClique = clique + 1;
+    setClique(novoClique);
+
+    // 2. Usa o novo valor do contador para decidir o nome
+    if (novoClique % 2 !== 0) {
       setNome('Funcionou :D');
+    }
+    else if (novoClique == 2){
+      setNome('Você apertou duas vezes esse botao \'-\'');
     } else {
       setNome('Felipe');
     }
