@@ -66,9 +66,9 @@ body {
 
 .c_imagem{
   height: 200px;
-  width: 100px;
-  transition: filter 300ms;
+  width: 300px;
   will-change: filter;
-  filter: drop-shadow(0 0 2em #f3e778aa);
+  transition: filter 300ms;
+  filter: drop-shadow(0 0 2em #00f8c2aa);
   object-fit: cover; /* Isso garante que a imagem não fique distorcida */
 }
