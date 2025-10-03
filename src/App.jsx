@@ -2,6 +2,7 @@ import { useState } from 'react'
 import imagine from './assets/imagine.png'
 import imagem from './assets/imagem.jpg'
 import './App.css'
+import Menu from './Menu.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,14 +28,17 @@ function App() {
 
   return (
     <>
+    <Menu nome="Ok"/>
+    <div class="espaco">
+    </div>
     <div>
-    <h1 class='c_titulo'>Ta bonito :)</h1>
+    <h4 class='c_titulo'>Calculando...</h4>
     {/* imagem dentro do public comentar shift+alt+A */}
     <img src='public/imagem.jpg' className="c_imagem" alt="React logo" />
     <img src={imagine} className="logo react" alt="React logo" />
     <p class="c_paragrafo"> Tá muito bonito isso em cara</p>
     </div>
-      <h1 className="c_titulo">Aula de Reactinho</h1>
+      <h1 className="c_titulo">Aula de Reacto</h1>
       <a href="https://www.google.com.br">SITE DO GOOGLE :)</a>
       <div className="c_corbranca">
         <ol>

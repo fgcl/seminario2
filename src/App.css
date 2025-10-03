@@ -60,6 +60,10 @@ body {
   color:white;
 }
 
+.espaco{
+  padding-top: 100%;
+}
+
 #id_nome{
   color:green;
 }
